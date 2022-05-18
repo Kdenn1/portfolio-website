@@ -1,0 +1,590 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-image:url(./Portfolio-Project/css/html/images/website\ background.webp);
+    color: white;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+.website-header {
+    padding: 20px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.website-header img {
+width: 80px;
+height: 80px;
+margin: 0 30px;
+border-radius: 10px;
+border: 3px solid black;
+}
+.website-header h1 {
+    margin: auto 0;
+    font-weight: bold;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: rgb(68, 64, 62);
+    height: 50px;
+    border: 1px solid black;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #000;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+nav ul li a:hover{
+    color: cyan;
+}
+
+header span {
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*flexbox configurations and main body elements*/
+
+.parent {
+    height: 150vh;
+    border: 10px solid black;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+    background-image: url(./Portfolio-Project/css/html/images/170.jpg);
+    
+
+}
+
+/*about me css*/
+
+.child1 {
+    width: 300px;
+    height: 640px;
+    background: rgb(177, 171, 171);
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 10px;
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.child1 h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.child1 button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid black;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .child1 button:hover {
+      color: yellow;
+  }
+
+  .child1 p {
+      text-align: center;
+      font-family:Arial, Helvetica, sans-serif;
+      margin-top: 0;
+      margin-bottom: 2;
+      font-size: 15px;
+      overflow-wrap: break-word;
+  }
+
+  .child1 img {
+      width: 150px;
+      height: 150px;
+      justify-content: center;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border: 1px solid black;
+      border-radius: 5px;
+  }
+
+
+/* projects css */
+
+.child2 {
+    width: 900px;
+    height: 640px;;
+    margin-top: 10px;
+    background: rgb(177, 171, 171);
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.child2 iframe {
+   
+    margin-left: 20px;
+    margin-right: 5px;
+    border: 2px solid black;
+    height: 350px;
+    width: 850px;
+    
+
+}
+
+.child2 h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.child2 p {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 10 auto auto 10;
+}
+
+.child2 h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* contact css */
+
+.child3 {
+    width: 300px;
+    height: 640px;
+    margin-top: 10px;
+    background: rgb(177, 171, 171);
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.25);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child3 h1 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+input[type=text], select, textarea {
+    width: 90%;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom:16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#contact {
+    justify-content: center;
+}
+
+.also {
+    align-items: center;
+}
+
+/* media queries */ 
+
+/* 980px max */
+
+@media screen and (max-width: 980px) {
+
+header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.website-header {
+    justify-content: center;
+}
+
+.website-header img {
+    height: 35px;
+    width: 35px;
+}
+
+.website-header h1 {
+    font-size: 25px;
+}
+
+.website-header span {
+    font-size: 20px;
+}
+
+nav {
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+header nav ul li {
+    justify-content: center;
+}
+
+header nav ul li a {
+    justify-content: center;
+}
+
+.parent {
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* about me section */
+
+.child1 {
+    width: 800px;
+    height: 250px;
+    justify-content: center;
+    margin-left: 0px;
+    margin-top: 0;
+}
+
+.child1 p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 45px;
+    font-size: 17px;
+}
+
+.child1 button {
+    height: 30px;
+    width: 90px;
+    font-size: 10px;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+.child1 h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-left: 45px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.child1 img {
+    height: 140px;
+    width: 140px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*projects section */
+
+.child2 {
+    height: 400px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child2 iframe {
+    height: 180px;
+    width: 750px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.child2 h1 {
+    margin-left: 320px;
+    margin-top: 5px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.child2 p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.child2 h3 {
+    margin-left: 210px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/* Contact section */
+
+
+.child3 {
+    height: 500px;
+    width: 800px;
+}
+
+.child3 h1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+input[type=text], select, textarea {
+    width: 70%;
+    height: 20px;
+    margin-left: 150px;
+}
+
+input[type=submit] {
+    margin-left: 370px;
+    
+}
+
+.child3 label {
+    margin-left: 10px;
+}
+
+.also {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.also ul {
+    margin-left: -23px;
+}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+.parent {
+    flex-wrap: wrap;
+}
+
+
+/* about me section */
+
+.child1 {
+    width: 650px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.child1 h2 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.child1 img {
+    height: 120px;
+    width: 120px;
+    margin-left: 0px;
+}
+
+.child1 p {
+    font-size: 12.5px;
+    margin-right: 50px;
+}
+
+/* projects section */
+
+.child2 {
+    width: 650px;
+    height: 400px;
+    margin-top: 5px;
+}
+
+.child2 h1 {
+    margin-left: 250px;
+}
+
+.child2 h3 {
+    margin-left: 125px;
+}
+
+
+
+/* contact section */
+
+.child3 {
+    width: 650px;
+    height: 500px;
+    margin-top: 5px;
+}
+
+.child3 h1 {
+    font-size: 15px;
+}
+
+input[type=text], select, textarea {
+    width: 80%;
+    margin-left: 10px;
+    height: 10px;
+}
+
+}
+
+/* media query for 575px and smaller */
+
+@media screen and (max-width: 575px) {
+
+.parent {
+    flex-wrap: wrap;
+}
+
+.website-header h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.website-header img {
+    height: 40px;
+    width: 40px;
+}
+
+/* about me section */
+
+.child1 {
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.child1 h2 {
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.child1 p {
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 11px;
+}
+
+.child1 button {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 1px;
+}
+
+.child1 img {
+    height: 110px;
+    width: 110px;
+    margin-left: 5px;
+    
+}
+
+
+
+/* projects section */
+
+.child2 {
+    width: 350px;
+    flex-direction: column;
+}
+
+.child2 h1 {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.child2 p {
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.child2 iframe {
+    width: 335px;
+    margin-left: 5px;
+    height: 250px;
+    margin-top: 12px;
+}
+
+.child2 h3 {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* contact section */
+
+.child3 {
+    width: 350px;
+    flex-direction: column;
+}
+
+input[type=text], select, textarea {
+    width: 30%;
+}
+
+textarea {
+    width: 70%;
+    margin-left: 18px;
+}
+
+select {
+    width: 70%;
+}
+
+input[type=submit] {
+    margin-left: 40px;
+}
+}
